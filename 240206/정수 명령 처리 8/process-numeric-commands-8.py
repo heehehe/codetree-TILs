@@ -111,7 +111,7 @@ def main():
     number_of_cmds = int(input())
     # print(number_of_cmds)
 
-    while number_of_cmds > 0:
+    for _ in range(number_of_cmds):
         input_item = input()
         input_item_list = input_item.split(" ")
         cmd, num = input_item_list if len(input_item_list) == 2 else (input_item, None)
@@ -126,8 +126,6 @@ def main():
             print(result)
         elif cmd == "empty":
             print("1" if result else "0")
-
-        number_of_cmds -= 1
 
 if __name__ == "__main__":
     main()
