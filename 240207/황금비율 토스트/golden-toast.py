@@ -96,30 +96,10 @@ def main():
         elif cmd.startswith("P "):
             doubly_linked_list.insert(iterator, cmd.split()[-1])
 
-        # print(iterator.prev)
-        # print(iterator.next)
-
-    it = doubly_linked_list.begin()
-    while it != doubly_linked_list.end(): # 'd' 'b' 'c'
-        print(it.data, end="")   # it가 가리키는 주소에 담긴 데이터 출력
-        it = it.next     # 다음 위치로 이동
-
-    # print(it.data)    # 원소 값을 출력합니다. ('a')
-    # it = it.next      # 한 칸 뒤로 이동합니다.
-    # print(it.data)    # 원소 값을 출력합니다. ('b')
-    # it = it.prev      # 한 칸 앞으로 이동합니다.
-    # print(it.data)    # 원소 값을 출력합니다. ('a')
-
-    # it = l.erase(it)  # 원소 'a'를 제거합니다.
-    # print(it.data)    # 원소 값을 출력합니다. ('b')
-
-    # l.insert(it, 'd') # 원소 'd'를 추가합니다.
-
-    # # list에 들어있는 원소 값을 순서대로 출력합니다.
-    # it = l.begin()
-    # while it != l.end(): # 'd' 'b' 'c'
-    #     print(it.data, end="")   # it가 가리키는 주소에 담긴 데이터 출력
-    #     it = it.next     # 다음 위치로 이동
+    iterator = doubly_linked_list.begin()
+    while iterator != doubly_linked_list.end():
+        print(iterator.data, end="")
+        iterator = iterator.next
 
 
 if __name__ == "__main__":
