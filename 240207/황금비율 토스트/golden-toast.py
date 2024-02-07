@@ -81,17 +81,14 @@ def main():
     for _ in range(int(m)):
         cmd = input()
 
-        if cmd == "L":
-            if iterator.prev:
-                iterator = iterator.prev
+        if cmd == "L" and iterator.prev:
+            iterator = iterator.prev
 
-        elif cmd == "R":
-            if iterator.next:
-                iterator = iterator.next
+        elif cmd == "R" and iterator.next:
+            iterator = iterator.next
 
-        elif cmd == "D":
-            if iterator.next:
-                iterator = doubly_linked_list.erase(iterator)
+        elif cmd == "D" and iterator.next:
+            iterator = doubly_linked_list.erase(iterator)
 
         elif cmd.startswith("P "):
             doubly_linked_list.insert(iterator, cmd.split()[-1])
