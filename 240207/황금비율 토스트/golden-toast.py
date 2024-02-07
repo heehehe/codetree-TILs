@@ -90,7 +90,8 @@ def main():
                 iterator = iterator.next
 
         elif cmd == "D":
-            iterator = doubly_linked_list.erase(iterator)
+            if iterator.next:
+                iterator = doubly_linked_list.erase(iterator)
 
         elif cmd.startswith("P "):
             doubly_linked_list.insert(iterator, cmd.split()[-1])
