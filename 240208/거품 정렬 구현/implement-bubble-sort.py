@@ -14,7 +14,9 @@ def bubble_sort(array):
 
 def main():
     length = int(input())
-    print(" ".join(bubble_sort(input().split())))
+    array = [int(i) for i in input().split()]
+    for element in bubble_sort(array):
+        print(element, end=" ")
     
 
 if __name__ == "__main__":
