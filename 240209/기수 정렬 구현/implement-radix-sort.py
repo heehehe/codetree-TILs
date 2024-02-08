@@ -16,7 +16,7 @@ def radix_sort(array):
             for element in array_new[digit]:
                 array.append(element)
 
-    p *= 10
+        p *= 10
 
     return array
 
