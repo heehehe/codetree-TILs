@@ -10,29 +10,24 @@ def merge_sort(array, low_index, high_index):
 def merge(array, low_index, mid_index, high_index):
     i = low_index
     j = mid_index + 1
-    k = low_index
 
     array_merged = []
     while i <= mid_index and j <= high_index:
         if array[i] <= array[j]:
             array_merged.append(array[i])
-            i += 1 #; k += 1
+            i += 1
         else:
             array_merged.append(array[j])
-            j += 1 #; k += 1
+            j += 1
 
     while i <= mid_index:
         array_merged.append(array[i])
-        k += 1
         i += 1
 
     while j <= high_index:
         array_merged.append(array[j])
-        k += 1
         j += 1
 
-    # for index in range(low_index, high_index+1):
-    #     array[index] = array_merged[index]
     array[low_index:high_index+1] = array_merged
 
 length = int(input())
