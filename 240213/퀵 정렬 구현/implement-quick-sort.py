@@ -20,7 +20,6 @@ def quick_sort(array, low, high):
 
 length = int(input())
 array = list(map(int, input().split()))
-quick_sort(array, 0, length-1)
 
-for element in array:
+for element in quick_sort(array, 0, length-1):
     print(element, end=" ")
