@@ -17,10 +17,9 @@ def heap_sort(array, n):
     for i in range(n//2-1, -1, -1):
         heapify(array, n, i)
 
-    for i in range(n-1, 0, -1):
+    for i in range(n-1, -1, -1):
         array[0], array[i] = array[i], array[0]
         heapify(array, i, 0)
-
 
 length = int(input())
 array = list(map(int, input().split()))
