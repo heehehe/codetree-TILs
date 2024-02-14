@@ -11,7 +11,7 @@ def heapify(array, n, i):
 
     if largest_index != i:
         array[i], array[largest_index] = array[largest_index], array[i]
-        heapify(array, n, largest_index-1)
+        heapify(array, n, largest_index)
 
 def heap_sort(array, n):
     for i in range(n//2, 0, -1):
