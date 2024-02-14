@@ -3,10 +3,10 @@ def heapify(array, n, i):
     left_index = i*2
     right_index = i*2+1
 
-    if left_index < n and array[left_index] > array[largest_index]:
+    if left_index <= n and array[left_index] > array[largest_index]:
         largest_index = left_index
     
-    if right_index < n and array[right_index] > array[largest_index]:
+    if right_index <= n and array[right_index] > array[largest_index]:
         largest_index = right_index
 
     if largest_index != i:
@@ -14,17 +14,17 @@ def heapify(array, n, i):
         heapify(array, n, largest_index-1)
 
 def heap_sort(array, n):
-    for i in range(n//2-1, -1, -1):
+    for i in range(n//2, 0, -1):
         heapify(array, n, i)
 
-    for i in range(n-1, 0, -1):
-        array[0], array[i] = array[i], array[0]
-        heapify(array, i, 0)
+    for i in range(n, 1, -1):
+        array[1], array[i] = array[i], array[1]
+        heapify(array, i-1, 1)
 
 
 length = int(input())
-array = list(map(int, input().split()))
+array = [0] + list(map(int, input().split()))
 heap_sort(array, length)
 
-for element in array:
+for element in array[1:]:
     print(element, end=" ")
