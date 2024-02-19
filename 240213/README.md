@@ -4,16 +4,16 @@
 24년 02월 13일 목표(25px)를 달성했어요🥳.
 
 ![50xp](https://img.shields.io/badge/EXP-50xp-%235cb85c.svg?for-the-badge)
-![0일째](https://img.shields.io/badge/연속학습-0일째-%23E34F26.svg?for-the-badge)
+![2일째](https://img.shields.io/badge/연속학습-2일째-%23E34F26.svg?for-the-badge)
 
 |총 문제수|획득 경험치|연속 학습|
 |---:|---:|---|
-2|50xp|0일째❄️|
+2|50xp|2일째🔥|
 
 |교재|이름|난이도|상태|최근 제출 코드|
 |---|---|:---:|:---:|---|
 |[Novice High / 정렬 / 퀵 정렬](https://www.codetree.ai/missions?missionId=6)|[[연습]퀵 정렬 구현](https://www.codetree.ai/missions/6/problems/implement-quick-sort)|![어려움][hard]|![Passed][passed]|[링크](https://github.com/heehehe/codetree-TILs/blob/main/240213/%ED%80%B5%20%EC%A0%95%EB%A0%AC%20%EA%B5%AC%ED%98%84/implement-quick-sort.py)|
-|[Novice High / 정렬 / 힙 정렬](https://www.codetree.ai/missions?missionId=6)|[[연습]힙 정렬 구현](https://www.codetree.ai/missions/6/problems/implement-heap-sort)|![어려움][hard]|![Failed][failed]|[링크](https://github.com/heehehe/codetree-TILs/blob/main/240213/%ED%9E%99%20%EC%A0%95%EB%A0%AC%20%EA%B5%AC%ED%98%84/implement-heap-sort.py)|
+|[Novice High / 정렬 / 힙 정렬](https://www.codetree.ai/missions?missionId=6)|[[연습]힙 정렬 구현](https://www.codetree.ai/missions/6/problems/implement-heap-sort)|![어려움][hard]|![Passed][passed]|[링크](https://github.com/heehehe/codetree-TILs/blob/main/240213/%ED%9E%99%20%EC%A0%95%EB%A0%AC%20%EA%B5%AC%ED%98%84/implement-heap-sort.py)|
 
 
 * 획득 경험치: 해설을 보지 않고 푼 문제에 한해 최초 1회 경험치를 획득하실 수 있습니다.
